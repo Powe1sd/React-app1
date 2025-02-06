@@ -1,0 +1,84 @@
+/* Estilos globales */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #007bff, #0056b3);
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+/* Contenedor principal */
+.container {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  margin: auto;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+/* Tarjeta de contenido */
+.card {
+  margin: 20px 0;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Botón estilizado */
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  outline: none;
+}
+
+button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Input con mejor diseño */
+.input-container {
+  margin-top: 15px;
+}
+
+input {
+  padding: 10px;
+  width: 85%;
+  border: 2px solid #007bff;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 91, 187, 0.5);
+}
+
+/* Título */
+h1 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #333;
+}
