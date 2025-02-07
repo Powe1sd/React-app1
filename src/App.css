@@ -38,7 +38,6 @@ body {
   transition: all 0.3s ease-in-out;
   width: 34%;
   min-width: 250px;
-
 }
 
 .card:hover {
@@ -143,5 +142,63 @@ h1 {
   input {
     font-size: 13px;
     padding: 8px;
+  }
+}
+
+/*estilos de link
+/* ... (your existing CSS) */
+
+/* Estilos para los links de navegación */
+.nav-link {
+  /* You can use any class name you want */
+  display: inline-block; /* Makes the link behave like a block element */
+  padding: 10px 20px; /* Adjust padding as needed */
+  background: linear-gradient(
+    to right,
+    #ff0000,
+    #8b0000
+  ); /* Same as your button */
+  color: white;
+  text-decoration: none; /* Remove underline */
+  border-radius: 6px; /* Same as your button */
+  margin: 10px; /* Add some margin around the link */
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link:hover {
+  background: linear-gradient(
+    to right,
+    #ffff00,
+    #ffff00
+  ); /* Same as your button hover */
+  transform: scale(1.05);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Optional: Style the link when it's active (the current page) */
+.nav-link.active {
+  /* Add the 'active' class to the Link component when it's active */
+  background: linear-gradient(
+    to right,
+    #003c8f,
+    #002863
+  ); /* A slightly darker shade */
+  font-weight: bold;
+}
+
+/* Responsive styles for links (adjust as needed) */
+@media (max-width: 768px) {
+  .nav-link {
+    font-size: 14px;
+    padding: 8px 16px;
+    margin: 5px; /* Reduce margin on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-link {
+    font-size: 13px;
+    padding: 6px 12px;
   }
 }
