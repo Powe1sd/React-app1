@@ -18,7 +18,6 @@ body {
   width: 90%;
   max-width: 900px;
   margin: auto;
-  text-align: center;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -37,8 +36,9 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
-  width: 45%;
-  min-width: 280px;
+  width: 34%;
+  min-width: 250px;
+
 }
 
 .card:hover {
@@ -71,7 +71,7 @@ button:hover {
 /* Input con mejor diseño */
 .input-container {
   margin-top: 15px;
-  width: 100%;
+  width: 90%;
 }
 
 input {
@@ -101,12 +101,12 @@ h1 {
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
-    width: 95%;
+    width: 85%;
     padding: 15px;
   }
 
   .card {
-    width: 100%;
+    width: 87%;
     min-width: auto;
   }
 
@@ -122,5 +122,26 @@ h1 {
   input {
     font-size: 14px;
     padding: 10px;
+  }
+}
+
+/* Estilos para pantallas aún más pequeñas */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  input {
+    font-size: 13px;
+    padding: 8px;
   }
 }
