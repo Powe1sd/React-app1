@@ -1,4 +1,9 @@
 /* OtraPagina.css */
+
+body {
+  background-color: #000000;
+}
+
 .otra-pagina {
   text-align: center;
   padding: 20px;
@@ -14,25 +19,25 @@
   width: 100%;
 }
 
-/* Media queries para ajustar el número de columnas en pantallas más pequeñas */
+/* Media query para ajustar el número de columnas en pantallas más pequeñas */
 @media (max-width: 768px) {
   .productos-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 columnas */
   }
 }
 
-@media (max-width: 576px) {
-  .productos-grid {
-    grid-template-columns: 1fr; /* 1 columna */
-  }
-}
+/* Removed the media query for max-width: 576px */
 .producto {
   border: none;
   padding: 20px;
   border-radius: 8px;
-  background-color: #222;
+  background-color: #000000;
   transition: transform 0.2s ease-in-out, box-shadow 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  -webkit-transition: transform 0.2s ease-in-out, box-shadow 0.3s ease;
+  -moz-transition: transform 0.2s ease-in-out, box-shadow 0.3s ease;
+  -ms-transition: transform 0.2s ease-in-out, box-shadow 0.3s ease;
+  -o-transition: transform 0.2s ease-in-out, box-shadow 0.3s ease;
 }
 .producto:hover {
   transform: translateY(-5px);
@@ -52,13 +57,13 @@
 }
 .producto-descripcion {
   font-size: 0.9em;
-  color: #aaa;
+  color: white;
   margin-bottom: 10px;
 }
 .producto-precio {
   font-weight: bold;
   margin-bottom: 15px;
-  color: #007bff;
+  color: red;
 }
 .producto-comprar {
   background-color: #007bff;
@@ -83,7 +88,7 @@
 .nav-link {
   display: inline-block;
   padding: 10px 20px;
-  background: linear-gradient(to right, #007bff, #0056b3);
+  background: linear-gradient(to right, #000000, #0056b3);
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -92,11 +97,11 @@
   box-shadow: 0 3px 8px rgb(0 0 0 / 20%);
 }
 .nav-link:hover {
-  background: linear-gradient(to right, #0056b3, #003c8f);
+  background: linear-gradient(to right, #000000, #003c8f);
   transform: scale(1.05);
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
 }
 .nav-link.active {
-  background: linear-gradient(to right, #003c8f, #002863);
+  background: linear-gradient(to right, #000000, #002863);
   font-weight: bold;
 }
