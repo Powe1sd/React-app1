@@ -1,7 +1,7 @@
 /* Estilos globales */
 body {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(to right, #007bff, #0056b3);
+  background: linear-gradient(to right, #1e3c72, #2a5298);
   text-align: center;
   padding: 20px;
   color: white;
@@ -9,13 +9,19 @@ body {
 
 /* Contenedor principal */
 .container {
-  background: white;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
   padding: 25px;
   border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-  width: 350px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 900px;
   margin: auto;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -23,37 +29,40 @@ body {
   transform: scale(1.02);
 }
 
-/* Tarjeta de contenido */
+/* Tarjetas de contenido */
 .card {
-  margin: 20px 0;
-  padding: 15px;
-  background: #f8f9fa;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
+  width: 45%;
+  min-width: 280px;
 }
 
 .card:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Botón estilizado */
 button {
-  background: #007bff;
+  background: linear-gradient(to right, #007bff, #0056b3);
   color: white;
   border: none;
-  padding: 12px 18px;
+  padding: 12px 20px;
   font-size: 16px;
   font-weight: bold;
   border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s ease-in-out, transform 0.2s;
+  transition: all 0.3s ease-in-out;
   outline: none;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
-  background: #0056b3;
+  background: linear-gradient(to right, #0056b3, #003c8f);
   transform: scale(1.05);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* Input con mejor diseño */
@@ -63,22 +72,34 @@ button:hover {
 
 input {
   padding: 10px;
-  width: 85%;
+  width: 90%;
   border: 2px solid #007bff;
   border-radius: 6px;
   font-size: 14px;
   outline: none;
-  transition: border-color 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 input:focus {
-  border-color: #0056b3;
-  box-shadow: 0 0 5px rgba(0, 91, 187, 0.5);
+  border-color: #ffbf00;
+  box-shadow: 0 0 8px rgba(255, 191, 0, 0.5);
 }
 
 /* Título */
 h1 {
-  font-size: 22px;
+  font-size: 24px;
   margin-bottom: 15px;
-  color: #333;
+  color: #ffffff;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .card {
+    width: 90%;
+  }
 }
