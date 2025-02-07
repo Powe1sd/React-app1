@@ -14,7 +14,7 @@ import "./App.css";
 function App() {
   return (
     <div className="container">
-      <h1>Bienvenido a mi aplicación con Vite</h1>
+      <h1>Aplicación con React</h1>
       <Components /> {/* Componente de saludo */}
       <SumarNumeros /> {/* Componente de suma */}
       <RestarNumeros />
@@ -23,7 +23,6 @@ function App() {
       <Potencia />
       <RaizCuadrada></RaizCuadrada>
       <Factorial></Factorial>
-      <DecimalBinario />
       <ConversorTemperatura />
       <ConversorUnidades1 />
     </div>
