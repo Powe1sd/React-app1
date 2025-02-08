@@ -3,7 +3,7 @@
 /* Estilos globales */
 body {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(to right, #2a5298, #8b0000); /* Azul a rojo */
+  background: linear-gradient(to right, #09122c, #1a1a19); /* Azul a rojo */
   text-align: center;
   padding: 20px;
   color: white;
@@ -51,7 +51,7 @@ body {
 
 /* Botón estilizado */
 button {
-  background: linear-gradient(to right, #007bff, #0056b3);
+  background: linear-gradient(to right, #f1f1f1, #1e201e);
   color: white;
   border: none;
   padding: 12px 20px;
@@ -67,7 +67,7 @@ button {
 }
 
 button:hover {
-  background: linear-gradient(to right, #0056b3, #003c8f);
+  background: linear-gradient(to right, #eeeeee, #01204e);
   transform: scale(1.05);
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
 }
@@ -82,7 +82,7 @@ input {
   padding: 12px;
   width: 100%;
   max-width: 300px;
-  border: 2px solid #007bff;
+  border: 2px solid #eeeeee;
   border-radius: 6px;
   font-size: 16px;
   outline: none;
@@ -160,8 +160,8 @@ h1 {
   padding: 10px 20px; /* Adjust padding as needed */
   background: linear-gradient(
     to right,
-    #ff0000,
-    #8b0000
+    #153448,
+    #1e0342
   ); /* Same as your button */
   color: white;
   text-decoration: none; /* Remove underline */
@@ -174,8 +174,8 @@ h1 {
 .nav-link:hover {
   background: linear-gradient(
     to right,
-    #ffff00,
-    #ffff00
+    #eeedeb,
+    #211951
   ); /* Same as your button hover */
   transform: scale(1.05);
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
