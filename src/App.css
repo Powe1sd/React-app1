@@ -1,13 +1,18 @@
 /* Estilos globales */
+/* Estilos globales */
+/* Estilos globales */
 body {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(to right, #000000, #2a5298);
+  background: linear-gradient(to right, #2a5298, #8b0000); /* Azul a rojo */
   text-align: center;
   padding: 20px;
   color: white;
   margin: 0;
 }
 
+/*... (resto del código CSS sin cambios) */
+
+/*... (resto del código CSS sin cambios) */
 /* Contenedor principal */
 .container {
   background: rgba(255, 255, 255, 0.1);
