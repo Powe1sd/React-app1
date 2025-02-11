@@ -14,9 +14,15 @@ body {
 
 /*... (resto del código CSS sin cambios) */
 /* Contenedor principal */
+/* Contenedor principal */
 .container {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(8px);
+  background: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Keep the background color if you want */
+  /* backdrop-filter: blur(8px);  Remove or comment out this line */
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
@@ -29,7 +35,6 @@ body {
   gap: 20px;
   transition: transform 0.3s ease-in-out;
 }
-
 .container:hover {
   transform: scale(1.02);
 }
@@ -67,7 +72,7 @@ button {
 }
 
 button:hover {
-  background: linear-gradient(to right, #eeeeee, #01204e);
+  background: linear-gradient(to right, #eeeeee, #ffbf00);
   transform: scale(1.05);
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
 }
