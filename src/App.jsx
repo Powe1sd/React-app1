@@ -27,7 +27,6 @@ function App() {
           element={
             <div className="container">
               <h1>Aplicación con React</h1>
-              <Components />
               <SumarNumeros />
               <RestarNumeros />
               <DividirNumeros />
